@@ -58,10 +58,28 @@ module.exports = {
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/another.html",
+      template: "./src/pages/szkolenie-CSS.html",
       inject: true,
-      chunks: ["index", "another"],
-      filename: "another.html",
+      chunks: ["index"],
+      filename: "szkolenie-CSS.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/szkolenie-HTML.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "szkolenie-HTML.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/szkolenie-JS.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "szkolenie-JS.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/Hobby.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "Hobby.html",
     }),
   ],
 };
