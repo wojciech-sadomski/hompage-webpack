@@ -66,7 +66,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/szkolenie-HTML.html",
       inject: true,
-      chunks: ["index"],
+      chunks: ["index", "another"],
       filename: "szkolenie-HTML.html",
     }),
     new HtmlWebpackPlugin({

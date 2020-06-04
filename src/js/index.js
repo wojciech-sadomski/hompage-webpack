@@ -1,5 +1,5 @@
 import "../scss/main.scss";
-
+import moment from "moment";
 /* place your code below */
 const name = "Wojciech Sadomski";
 const age = 36;
@@ -38,4 +38,9 @@ const menu = function () {
   const nav = document.querySelector(".navigation--js");
   nav.classList.toggle("navigation--open");
 };
+
+console.log(moment().format("MMMM Do YYYY, h:mm:ss a"));
+const clock = document.querySelector(".clock--js");
+const time = moment().format("MMM Do YY");
+clock.innerHTML = `${time}`;
 btn.addEventListener("click", menu);
