@@ -1,7 +1,7 @@
 @import "~normalize.css";
-
-@import "_variables";
+@import "modules/section.scss";
 @import "modules/hello.scss";
+@import "modules/grid.scss";
 
 body {
   background-color: #2cabdd;
@@ -51,36 +51,6 @@ a {
     color: red;
   }
 }
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
-  border-radius: 30px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  &__header {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    font-size: 25px;
-    color: green;
-    text-align: center;
-    background-color: rgb(154, 205, 50);
-    border-radius: 30px;
-  }
-  &__section {
-    display: block;
-    background-color: yellow;
-    border-radius: 15px;
-    &__foto {
-      height: 80%;
-      width: 80px;
-      border-radius: 10%;
-      float: left;
-      margin-left: 5px;
-    }
-  }
-}
 
 .hamburger {
   display: none;
@@ -115,80 +85,7 @@ main {
     border-style: solid;
   }
 }
-.section {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 30px;
-  background-color: greenyellow;
-  font-size: 30px;
-  color: black;
-  clear: both;
-  z-index: 900;
-  &__gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  &__header {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    color: green;
-    text-decoration-line: none;
-  }
-  &__nextToFoto {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    background-color: greenyellow;
-    font-size: 30px;
-    color: black;
-    z-index: 900;
-    max-width: 100%;
-  }
-  &__text {
-    text-align: center;
-    color: rgb(28, 26, 189);
-    font-size: 20px;
-    margin-top: 0em;
-  }
-  &__foto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 250px;
-    max-width: 250px;
-    border-radius: 50%;
-    margin: 10px;
-    &--bike {
-      width: 80%;
-      border-radius: 50px;
-      margin: auto;
-      &:hover {
-        border: 5px;
-        border-style: solid;
-        border-color: rgba(0, 0, 255, 0.7);
-        box-sizing: border-box;
-      }
-    }
-  }
-  &__link {
-    color: rgb(55, 149, 212);
-    text-decoration-line: none;
-    font-size: 20px;
-  }
-}
 
-.section__foto:hover {
-  border: 5px;
-  border-style: solid;
-  border-color: rgba(0, 0, 255, 0.7);
-  box-sizing: border-box;
-}
 .list {
   margin-top: 0em;
   color: rgb(55, 149, 212);
@@ -229,15 +126,7 @@ main {
       transform: translateY(23px);
     }
   }
-  .section {
-    &__nextToFoto {
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    &__foto {
-      width: 90%;
-    }
-  }
+
   .footer {
     font-size: 15px;
   }
@@ -263,14 +152,6 @@ main {
       padding: 15px;
       width: 0;
       display: block;
-    }
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    &__header {
-      grid-column-start: 1;
-      grid-column-end: 2;
     }
   }
 }

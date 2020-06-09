@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  &__header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 25px;
+    color: green;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 30px;
+  }
+  &__section {
+    display: block;
+    background-color: yellow;
+    border-radius: 15px;
+    &__foto {
+      height: 80%;
+      width: 80px;
+      border-radius: 10%;
+      float: left;
+      margin-left: 5px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    &__header {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+}
