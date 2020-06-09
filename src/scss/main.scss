@@ -202,9 +202,32 @@ main {
   }
   .hamburger {
     display: block;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: 0;
+    border-top: 3px solid green;
     position: absolute;
-    top: 20px;
-    right: 10px;
+    top: 10px;
+    right: 15px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-top: 3px solid green;
+      transform: translateY(10px);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-top: 3px solid green;
+      transform: translateY(23px);
+    }
   }
   .section {
     &__nextToFoto {
