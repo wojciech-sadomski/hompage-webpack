@@ -1,18 +1,13 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![Foto Wojciech Sadomski](https://wojciech-sadomski.github.io/homepage-webpack/img/myFace.78495615.jpg)
 
-# WTF Webpack Starter Kit 
+# Wojciech Sadomski WTF Hompage
 
-Simple toolkit for your static websites development.
+Na tej stronie testuję swoje umiejętności jeśli chodzi o programowanie
 
-## How to use it?
+## Co tu znajdziemy?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Na stronie znajdują się głównie zakładki, które odnoszą się do konkretnych "stopni" tworzenia strony.
+Dodatkowo powstała strona "hobby" która jest poligonem doświadczalnym dla wszystkich zdobytych umiejętności.
 
-## Available scripts
 
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
 
