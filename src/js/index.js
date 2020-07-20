@@ -7,7 +7,7 @@ const heading = document.querySelector(".global-header--js");
 if (heading) {
   heading.innerHTML = `Mam na imię ${name} i mam ${age} lat`;
 }
-console.log("HELLO 🚀");
+console.log("Dzień dobry, co mi tu w kod zaglądasz 😃");
 function calculate(myNumber) {
   console.log(myNumber);
   return myNumber * 7;
@@ -38,7 +38,24 @@ const menu = function () {
   const nav = document.querySelector(".navigation--js");
   nav.classList.toggle("navigation--open");
 };
+//Pobieranie danych z zewnątrz
 
+fetch("https://api.github.com/users/wojciech-sadomski/repos")
+  .then((resp) => resp.json())
+  .then((resp) => {
+    for (let repo of resp) {
+      const { name, html_url } = repo;
+      const repositoryList = document.querySelector(".section__text--list");
+      const myTemplate = `<li> ${name} <a href="${html_url}" title="link do repozytorium ${name}">Link do GitHub</a></li>`;
+      repositoryList.innerHTML += myTemplate;
+    }
+  })
+
+  .catch((error) => {
+    console.log("Nie udało się pobrać");
+  });
+
+// Stefan
 console.log(moment().format("MMMM Do YYYY, h:mm:ss a"));
 const clock = document.querySelector(".clock--js");
 const time = moment().format("MMM Do YY");

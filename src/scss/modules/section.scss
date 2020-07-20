@@ -38,6 +38,13 @@
     color: rgb(28, 26, 189);
     font-size: 20px;
     margin-top: 0em;
+    &--list {
+      color: rgb(28, 26, 189);
+      text-align: left;
+      margin-top: 0em;
+      text-decoration-line: none;
+      font-size: 20px;
+    }
   }
   &__foto {
     display: flex;
